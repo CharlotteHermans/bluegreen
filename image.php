@@ -5,6 +5,7 @@ $white = imagecolorallocate($im, 255, 255, 255);
 // Line reserved to trigger the webhook in the lab. 
 $deployment = getenv("COLOR");
 
+
 if ( $deployment == 'blue') {
   $color = imagecolorallocate($im, 0, 0, 255);
 } elseif ($deployment == 'green')  {
